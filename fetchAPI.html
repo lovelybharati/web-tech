@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+   <script>
+    // store in the from of string
+    let url="https://goweather.herokuapp.com/weather/dharmapuri"
+    //fetch the API using fetch()method
+    let fetched_url = fetch(url) 
+    //process fetched api
+    fetched_url.then((resp)=>{  
+        return resp.json()
+    }).then((datas)=>{
+        console.log(datas)
+    })
+   </script> 
+</body>
+</html>
